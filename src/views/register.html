@@ -20,7 +20,7 @@
     <header>
       <div class="barra-completa">
         <div class="logo-y-searchbar">
-          <figure id="logo">
+          <figure class="logo">
             <img
               src="/images/logo-mercado-liebre.svg"
               alt="Logo de Mercado Liebre"
@@ -28,19 +28,21 @@
           </figure>
 
           <div class="search-bar">
-            <input
-              type="text"
-              name="busqueda"
-              id="busqueda"
-              placeholder="Buscar productos, marcas..."
-            />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <form action="" method="GET">
+              <input
+                type="text"
+                name="busqueda"
+                id="busqueda"
+                placeholder="Buscar productos, marcas..."
+              />
+              <a href="/"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
           </div>
-        </div>
 
-        <div class="compra-en-cuotas">
-          <i class="fa-solid fa-hand-holding-dollar"></i>
-          <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
+          <div class="compra-en-cuotas">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
+          </div>
         </div>
       </div>
 
@@ -200,7 +202,7 @@
           <input type="password" name="password" id="password" />
         </div>
 
-        <div>
+        <div class="botones">
           <button type="submit"><a href="/">Enviar</a></button>
           <button type="reset">Borrar</button>
         </div>

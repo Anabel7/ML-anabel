@@ -1,10 +1,17 @@
 main {
-    text-align: center;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-div {
-    margin: 10px;
+main form {
+    padding: 10%;
+    display: flex;
+    flex-direction: column; 
+}
+
+main div {
+    margin: 1%;
+    align-self: flex-start;
 }
 
 label.titulo{
@@ -12,8 +19,19 @@ label.titulo{
 }
 
 button {
-    background-color: #03264c;
+    background-color: #1259c3;
     color: white;
+    width: 50%;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: #0022AA;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
 }
 
 .checkbox1 {
@@ -28,3 +46,7 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+/* @media (min-width: 361px) {
+
+} */

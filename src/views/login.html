@@ -20,7 +20,7 @@
     <header>
       <div class="barra-completa">
         <div class="logo-y-searchbar">
-          <figure id="logo">
+          <figure class="logo">
             <img
               src="/images/logo-mercado-liebre.svg"
               alt="Logo de Mercado Liebre"
@@ -28,19 +28,21 @@
           </figure>
 
           <div class="search-bar">
-            <input
-              type="text"
-              name="busqueda"
-              id="busqueda"
-              placeholder="Buscar productos, marcas..."
-            />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <form action="" method="GET">
+              <input
+                type="text"
+                name="busqueda"
+                id="busqueda"
+                placeholder="Buscar productos, marcas..."
+              />
+              <a href="/"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
           </div>
-        </div>
 
-        <div class="compra-en-cuotas">
-          <i class="fa-solid fa-hand-holding-dollar"></i>
-          <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
+          <div class="compra-en-cuotas">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
+          </div>
         </div>
       </div>
 
@@ -76,18 +78,28 @@
     </div>
 
     <main>
-      <form action="" method="POST">
-        <div>
+      <form action="" method="POST" class="formulario-login">
+        <div class="ingresar-dato">
           <!-- <label for="usuario">Nombre de usuari@</label> -->
-          <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuari@"/>
+          <input
+            type="text"
+            name="usuario"
+            id="usuario"
+            placeholder="Nombre de usuari@"
+          />
         </div>
 
-        <div>
+        <div class="ingresar-dato">
           <!-- <label for="password">Contraseña</label> -->
-          <input type="password" name="password" id="password" placeholder="Contraseña" />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Contraseña"
+          />
         </div>
 
-        <div>
+        <div class="boton-enviar">
           <button type="submit"><a href="/">Enviar</a></button>
         </div>
       </form>
@@ -95,33 +107,33 @@
 
     <footer>
       <div class="footer">
-      <article class="footer-box">
-        <i class="fa-solid fa-credit-card"></i>
-        <h2>Pagá con tarjeta o en efectivo</h2>
-        <p>
-          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
-          efectivo en puntos de pago. ¡Y siempre es seguro!
-        </p>
-      </article>
+        <article class="footer-box">
+          <i class="fa-solid fa-credit-card"></i>
+          <h2>Pagá con tarjeta o en efectivo</h2>
+          <p>
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+            efectivo en puntos de pago. ¡Y siempre es seguro!
+          </p>
+        </article>
 
-      <article class="footer-box">
-        <i class="fa-solid fa-gift"></i>
-        <h2>Envío gratis desde $ 2.500</h2>
-        <p>
-          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
-          miles de productos. Es un beneficio de Mercado Puntos.
-        </p>
-      </article>
+        <article class="footer-box">
+          <i class="fa-solid fa-gift"></i>
+          <h2>Envío gratis desde $ 2.500</h2>
+          <p>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+            miles de productos. Es un beneficio de Mercado Puntos.
+          </p>
+        </article>
 
-      <article class="footer-box">
-        <i class="fa-solid fa-user-shield"></i>
-        <h2>Seguridad, de principio a fin</h2>
-        <p>
-          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
-          hacer, porque estás siempre protegid@.
-        </p>
-      </article>
-    </div>
+        <article class="footer-box">
+          <i class="fa-solid fa-user-shield"></i>
+          <h2>Seguridad, de principio a fin</h2>
+          <p>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+            puedas hacer, porque estás siempre protegid@.
+          </p>
+        </article>
+      </div>
 
       <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
     </footer>
