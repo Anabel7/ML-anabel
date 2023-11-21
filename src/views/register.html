@@ -21,10 +21,11 @@
       <div class="barra-completa">
         <div class="logo-y-searchbar">
           <figure class="logo">
-            <img
-              src="/images/logo-mercado-liebre.svg"
-              alt="Logo de Mercado Liebre"
-            />
+            <a href="/">
+              <img
+                src="/images/logo-mercado-liebre.svg"
+                alt="Logo de Mercado Liebre"
+              /></a>
           </figure>
 
           <div class="search-bar">
@@ -78,7 +79,7 @@
     </div>
 
     <main>
-      <form action="" method="POST">
+      <form action="" method="POST" class="formulario-registro">
         <div>
           <!-- <label for="name">Nombre y apellido</label> -->
           <input
@@ -114,7 +115,7 @@
 
         <div>
           <label for="nacimiento" class="titulo">Fecha de nacimiento</label>
-          <input type="date" name="nacimiento" id="nacimiento" min="1940-01-01"
+          <input type="date" name="nacimiento" id="nacimiento" required min="1940-01-01"
           max="2005-12-31 />
         </div>
 

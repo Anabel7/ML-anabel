@@ -145,6 +145,7 @@ article {
   font-size: 16px;
   display: none;
 }
+
 .linea-precio {
   display: flex;
   flex-wrap: wrap;
@@ -184,6 +185,9 @@ button a:visited {
 
 /* Media queries en tablet*/
 @media (min-width: 361px) {
+  .logo {
+    width: 33%;
+  }
   .descripciones {
     display: block;
     visibility: hidden;
@@ -262,6 +266,9 @@ button a:visited {
 
 /* Media queries en desktop*/
 @media (min-width: 769px) {
+  .logo {
+    width: 25%;
+  }
   .contenedor-producto {
     width: 23%;
     margin: 1%;
@@ -273,7 +280,6 @@ button a:visited {
     padding: 5%;
     font-size: 1.3em;
   }
-  
   footer h4 {
     display: flex;
     margin: 2% 0;
