@@ -34,10 +34,23 @@ header {
   width: 50%;
   background-color: white;
   display: flex;
+  position: relative;
 }
-
+div form {
+  width: 100%;
+}
+div form input {
+  width: 100%;
+}
 .search-bar i {
   color: #666;
+  position: absolute;
+  right: 3px;
+  margin: auto;
+  top: 2px;
+}
+.search-bar i:hover {
+  color:#03264c;
 }
 
 .logo-y-searchbar {
@@ -47,7 +60,6 @@ header {
   flex-wrap: wrap;
   width: 100%;
 }
-
 
 .compra-en-cuotas {
   text-align: center;
@@ -192,6 +204,7 @@ button a:visited {
     display: block;
     visibility: hidden;
   }
+
   .login-bar {
     display: block;
   }
